@@ -1,9 +1,9 @@
 ## CentOS 学习笔记 ##
 ###Web服务器安装###
 
-- [apache服务器](apache.md)
+- apache服务器
 	- [apache安装](apache.md)
-	- [apache配置](apache.md)  
+	- [apache配置](apacheConfig.md)  
 - [php解析器](php.md)
 	- [PHP安装]()
 	- [PHP配置]()
