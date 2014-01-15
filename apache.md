@@ -3,7 +3,7 @@
 ###1.1 Apache服务器简介###
 
 **Apache服务器** 是一个非常优秀的web服务器,目前是世界使用排名第一的Web服务器软件。  
-**Apache服务器**的官方网站是[http://httpd.apache.org](http://httpd.apache.org)。  
+官方网站是[http://httpd.apache.org](http://httpd.apache.org)。  
 **Apache服务器**名字比较长，以下文章默认使用**Apache**代替**Apache服务器**这个名字。
 
 ###1.2 检查Apache的安装情况 ###
