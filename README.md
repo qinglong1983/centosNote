@@ -1,7 +1,9 @@
 ## CentOS 学习笔记 ##
 ==========
 ###Web服务器安装###
-
+- CentOS
+	- [CentOS安装](centos.md)
+	- [CentOS静态IP配置](centosIp.md)
 - apache服务器
 	- [apache安装](apache.md)
 	- [apache配置](apacheConfig.md)  
