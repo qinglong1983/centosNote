@@ -21,6 +21,7 @@ CentOS电脑，在局域网里面，如果掉电或重启，它的IP会被DHCP�
 	NETMASK=255.255.255.0  
 	GATEWAY=192.168.0.1  
 	DNS1=192.168.0.1  
+	DNS2=202.96.128.166
 
 **DEVICE=eth0**   
 描述网卡对应的设备别名
@@ -72,6 +73,10 @@ DNS1服务器的地址，可以在CMD中使用nslookup查到
 	nameserver 192.168.0.1  
 
 这个文件不需要修改，它根据网卡的配置文件/etc/sysconfig/network-scripts/ifcfg-eth0自动产生。每次重启网络服务后，该内容会重新生成。
+
  
 ###4. 重启网络服务####
-	service network restart  
+	service network restart 
+	或者
+	/etc/init.d/network restart
+　  
