@@ -35,11 +35,11 @@
 
 ###1.5 Apache基本操作###
 
-1. 系统在引导时启动**Apache**
+1. 系统在引导时启动 **Apache**
 
 		chkconfig --levels 235 httpd on
 
-2. 启动**Apache**
+2. 启动 **Apache**
 
 		/etc/init.d/httpd start
 	
@@ -47,7 +47,7 @@
 
 		service httpd start 
 
-3. 重新启动**Apache**
+3. 重新启动 **Apache**
 
 		/etc/init.d/httpd restart
 
@@ -56,7 +56,7 @@
 		service httpd restart
 
 
-4. 停止**Apache**
+4. 停止 **Apache**
 	
 		/etc/init.d/httpd stop
 
@@ -64,15 +64,15 @@
 	
 		service httpd stop
 
-5. 查看**Apache**进程
+5. 查看 **Apache** 进程
 
 		ps aux | grep httpd
 
-6. 首次验证**Apache**已经启动
+6. 首次验证 **Apache** 已经启动
 
 		打开您的浏览器到http：//127.0.0.1，你应该看到Apache2的测试页
 
-7. **Apache**文档存放位置
+7. **Apache** 文档存放位置
 
 		Apache的默认文档根目录是在 /var/www/html
 		配置文件是   /etc/httpd/conf/httpd.conf
