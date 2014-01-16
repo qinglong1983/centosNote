@@ -4,13 +4,22 @@
 - CentOS
 	- [CentOS安装](centos.md)
 	- [CentOS静态IP配置](centosIp.md)
+	- [CentOS基本命令](basic.md)
+	- [RPM包](rpm.md)
+- JAVA
+	- [JDK安装](jdk.md)
+- Erlang
+	- [Erlang安装](erlang.md)
 - apache服务器
 	- [apache安装](apache.md)
 	- [apache配置](apacheConfig.md)  
-- [php解析器](php.md)
-	- [PHP安装]()
+- php解析器
+	- [PHP安装](php.md)
 	- [PHP配置]()
-- [Mysql数据库](mysql.md)
+- Mysql数据库
+	- [Mysql安装](mysql.md)
+- Tomcat服务器
+	- [Tomcat](tomcat.md)
 - [iptables防火墙](iptables.md)
 
 ###系统管理###
