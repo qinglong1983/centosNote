@@ -15,12 +15,39 @@ CentOS的官方网站是[http://www.centos.org](http://www.centos.org)
 - Rescue installed system **进入系统修复模式**  
 - Boot from local drive **退出安装从硬盘启动**  
 - Memory test **内存检测**  
+![Centos安装](/img/CentOSInstall001.jpg)
 
 
 这里选择第一项，安装或升级现有的系统，回车。  
-出现是否对CD媒体进行测试的提问，这里选择“Skip”跳过测试。
+![Centos安装](/img/CentOSInstall002.jpg)
+
+
+出现是否对CD媒体进行测试的提问，这里选择“Skip”跳过测试。  
+
+![Centos安装](/img/CentOSInstall003.jpg)
+
+出现安装界面，点击下一步
+
+![Centos安装](/img/CentOSInstall004.jpg)
+
+选择简体中文
+
+![Centos安装](/img/CentOSInstall005.jpg)
+
+选择美国英语
+
+![Centos安装](/img/CentOSInstall006.jpg)
+
+选择基本存储设备
+
+![Centos安装](/img/CentOSInstall007.jpg)
 
 取消“系统时钟使用UTC时间”前面的勾
+
+![Centos安装](/img/CentOSInstall008.jpg)
+
+
+
 
 架设硬盘总共5G  
 / 4G,/就是根目录，这里表示为根目录分配4G的空间。    
