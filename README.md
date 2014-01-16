@@ -4,6 +4,7 @@
 - CentOS
 	- [CentOS安装](centos.md)
 	- [CentOS目录](centosDirectory.md)
+	- [yum工具](yum.md)
 	- [CentOS静态IP配置](centosIp.md)
 	- [CentOS基本命令](basic.md)
 	- [RPM包](rpm.md)
