@@ -9,6 +9,7 @@
 	- [CentOS基本命令](basic.md)
 	- [RPM包](rpm.md)
 	- [重启问题查询](rebootCause.md)
+	- [coreDump](coredump.md)
 - JAVA
 	- [JDK安装](jdk.md)
 - Erlang
