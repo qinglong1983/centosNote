@@ -8,6 +8,7 @@
 	- [CentOS静态IP配置](centosIp.md)
 	- [CentOS基本命令](basic.md)
 	- [RPM包](rpm.md)
+	- [重启问题查询](rebootCause.md)
 - JAVA
 	- [JDK安装](jdk.md)
 - Erlang
