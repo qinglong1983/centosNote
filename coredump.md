@@ -51,3 +51,16 @@ echo “/tmp/cores/core” > /proc/sys/kernel/core_pattern
 设置完以后我们可以做个测试，写个程序，产生一个异常。  
 我们会看到当前目录会有个core*的文件。  
 输入gdb core。***程序进行调试。
+
+
+
+###小程序产生 core dump###
+
+	#include <stdio.h>
+	
+	int main()
+	{
+	    int *null_ptr = NULL;
+	    *null_ptr = 10;            //对空指针指向的内存区域写,会发生段错误
+	    return 0;
+	}
