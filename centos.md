@@ -143,5 +143,23 @@ CentOS的官方网站是[http://www.centos.org](http://www.centos.org)。
 
 我们按下回车键，系统就会启动了
 
+![Centos安装](/img/CentOSBoot001.jpg)
+启动后我们进入到欢迎界面，这里还需要我们进行一些设置。
+![Centos安装](/img/CentOSBoot002.jpg)
+首先我们得同意许可协议
+
+![Centos安装](/img/CentOSBoot003.jpg)
+然后系统要求我们创建一个用户。  
+系统默认有一个用户是root。   
+但是我们需要创建一个自己的用户，这样root用户用于系统管理，我们的用户用于管理自己的文件。  
+
+![Centos安装](/img/CentOSBoot004.jpg)
+
+设置一下时间
+![Centos安装](/img/CentOSBoot005.jpg)
+
+打开kdump,然后重启
+
 ![Centos安装](/img/CentOSInstall020.jpg)
 最后输入我们的用户名和密码进行登录。
+
