@@ -11,7 +11,7 @@ lua.c:210: 警告：隐式声明函数 ‘add_history’
 make[2]: *** [lua.o] 错误 1  
 make[2]: Leaving directory `/data0/software/lua-5.1.4/src’  
 make[1]: *** [linux] 错误 2  
-make[1]: Leaving directory `/data0/software/lua-5.1.4/src’  
+make[1]: Leaving directory `/data0/software/lua-5.1.4/src’     
 make: *** [linux] 错误 2  
 解决方法：  
 
