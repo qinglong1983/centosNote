@@ -1,36 +1,43 @@
 ## CentOS 学习笔记 ##
 ==========
 ###Web服务器安装###
-- CentOS
-	- [CentOS安装](centos.md)
-	- [CentOS目录](centosDirectory.md)
-	- [yum工具](yum.md)
-	- [CentOS静态IP配置](centosIp.md)
-	- [CentOS基本命令](basic.md)
-	- [RPM包](rpm.md)
-	- [重启问题查询](rebootCause.md)
-	- [coreDump](coredump.md)
-- JAVA
-	- [JDK安装](jdk.md)
-- Erlang
-	- [Erlang安装](erlang.md)
-- apache服务器
-	- [apache安装](apache.md)
-	- [apache配置](apacheConfig.md)  
-- php解析器
-	- [PHP安装](php.md)
-	- [PHP配置]()
-- Mysql数据库
-	- [Mysql安装](mysql.md)
-- Tomcat服务器
-	- [Tomcat](tomcat.md)
-- [iptables防火墙](iptables.md)
+- CentOS简介
+	- [CentOS历史]
+	- [系统安装]
+		- [CentOS安装](centos.md)
+		- [CentOS基本命令](basic.md)
+	- [登录退出]
+	- [开机关机]
+	- [日期时间]
+	- [语言设置]
+	- [网络配置]
+		- [CentOS静态IP配置](centosIp.md)
+		- [iptables防火墙](iptables.md)
+	- [系统管理]
+		- [chkconfig服务自动启动](chkconfig.md)
+	- [错误管理]
+		- [重启问题查询](rebootCause.md)
+		- [coreDump](coredump.md)
+	- [磁盘分区]
+	- [文件夹]
+		- [创建和删除]
+		- [系统目录](centosDirectory.md)
+	- [安装和更新]
+		- [yum工具](yum.md)
+		- [RPM包](rpm.md)
+	- [安装JAVA环境]
+		- [JDK安装](jdk.md)
+	- [搭建WEB服务器]
+	 	- [apache安装](apache.md)
+		- [apache配置](apacheConfig.md)  
+		- [Tomcat](tomcat.md)
+		- [PHP安装](php.md)
+		- [PHP配置]()
+	- [搭建数据库服务器]
+		- [Mysql安装](mysql.md)
+	- [搭建消息服务器]
+		- [安装Erlang](erlang.md)
+	- [搭建poco环境]
+	- [搭建流媒体服务器]
+		- [FLV格式](flvFormat.md)
 
-###系统管理###
-
-- [chkconfig服务自动启动](chkconfig.md)
-
-
-###流媒体服务器###
-
-- [FLV格式](flvFormat.md)
