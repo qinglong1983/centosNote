@@ -68,18 +68,60 @@
 	保存退出，执行
 
 	source /etc/profile
+	
+	创建符号链接
+	因为wowza流媒体需要这个链接，所以我们需要创建一个
+	ln -sf /usr/local/jdk1.7.0_51/bin/java /usr/bin/java
 
 ##安装mysql##
+首先，为了保证安装成功，我们需要删除以前的mysql
 
 	rpm -qa | grep -i mysql
 	如果找到有mysql相关的库，先进行删除
 	rpm -e --nodeps mysql-libs-5.1.61-4.el6.x86_64
-	
 
+然后，我们使用repo方式进行安装，先必须安装repo
+	
+	打开http://dev.mysql.com/downloads/repo/  
+从这里下载对应的版本,我们目前下载的是
+
+	mysql-community-release-el6-5.noarch.rpm
+	CentOS 6 对应的是 Redhat6的
+	sudo yum localinstall mysql-community-release-el6-5.noarch.rpm
+
+使用yum安装mysql
+
+		sudo yum install mysql-server
+
+开始和停止mysql服务
+
+		开始mysql服务
+		sudo service mysqld start
+
+		检查mysql状态
+		sudo service mysqld status
+
+		停止mysql服务
+		sudo service mysqld stop
+	
+####安装odbc####
+因为pocolib依赖这个，所以我们需要先安装odbc  
+
+	sudo yum install unixODBC unixODBC-devel libtool-ltdl libtool-ltdl-devel
+	sudo yum install mysql-connector-odbc
 
 ##安装pocolib##
 
+	yum --enablerepo=base install openssl-devel
+	wget http://pocoproject.org/releases/poco-1.4.6/poco-1.4.6p4-all.tar.gz
+	tar -zxvf poco-1.4.6p4-all.tar.gz
+	./configure --omit=Data/ODBC,Data/MySQL
+	make
+	make install
+
 ##安装wowza流媒体##
+
+	
 
 ##支持C1000K##
 
@@ -124,5 +166,9 @@ g++的名字叫做 gcc-c++
 
 	yum install gcc-c++
  
+##解压bz2文件##
 
-
+	tar jxvf XX.tar.bz2
+	如果tar不支持j选项，就用下面方式解压
+	bzip2 -d  XX.tar.bz2
+	tar -xvf  XX.tar.bz2
