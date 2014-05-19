@@ -1,8 +1,8 @@
-#云服务器安装#
+# 云服务器安装 #
 
-##用户设置##
+## 用户设置 ##
 
-1. 查看系统里所有用户   
+1. 查看系统里所有用户
  
     	cat /etc/passwd
 
@@ -31,28 +31,25 @@
 		修改完成后需要重新启动
 		/etc/init.d/sshd restart
 
-##安装查找软件##
+## 安装查找软件 ##
 
 		yum install mlocate  
 		updatedb
 		locate mysql.h
 
-
-
-
-##安装apache##
+## 安装apache ##
 
 		yum install apache
 
-##安装php##
+## 安装php ##
 		
 	yum install php
 
-##安装rz##
+## 安装rz ##
 
 	yum install lrzsz
 
-##安装java##
+## 安装java ##
 
 	下载绿色版本jdk的tar包
 	拷贝并解压缩到 /usr/local中
@@ -73,7 +70,7 @@
 	因为wowza流媒体需要这个链接，所以我们需要创建一个
 	ln -sf /usr/local/jdk1.7.0_51/bin/java /usr/bin/java
 
-##安装mysql##
+## 安装mysql ##
 首先，为了保证安装成功，我们需要删除以前的mysql
 
 	rpm -qa | grep -i mysql
@@ -104,13 +101,13 @@
 		停止mysql服务
 		sudo service mysqld stop
 	
-####安装odbc####
+## 安装odbc ##
 因为pocolib依赖这个，所以我们需要先安装odbc  
 
 	sudo yum install unixODBC unixODBC-devel libtool-ltdl libtool-ltdl-devel
 	sudo yum install mysql-connector-odbc
 
-##安装pocolib##
+## 安装pocolib ##
 
 	yum --enablerepo=base install openssl-devel
 	wget http://pocoproject.org/releases/poco-1.4.6/poco-1.4.6p4-all.tar.gz
@@ -119,11 +116,11 @@
 	make
 	make install
 
-##安装wowza流媒体##
+## 安装wowza流媒体 ##
 
 	
 
-##支持C1000K##
+## 支持百万用户（C1000K） ##
 
 1. 修改当前系统的全局最大打开文件数
 
@@ -157,11 +154,11 @@
 		保存退出, 重新登录服务器.
 
 
-####gcc安装####
+### gcc安装 ###
 
 	yum install gcc
 
-####g++安装####
+### g++安装 ###
 g++的名字叫做 gcc-c++
 
 	yum install gcc-c++
@@ -172,3 +169,25 @@ g++的名字叫做 gcc-c++
 	如果tar不支持j选项，就用下面方式解压
 	bzip2 -d  XX.tar.bz2
 	tar -xvf  XX.tar.bz2
+	
+	
+	
+## mac连接linux ##
+mac通过终端ssh远程连接centos服务器  
+在终端下输入
+  
+	连接22端口
+	ssh -l root ip地址      
+	连接其他端口
+	ssh -p 端口 -l 用户名 ip地址 
+ 
+ssh 连接的时候 Host key verification failed. 
+解决方法:
+	
+	vi ~/.ssh/known_hosts
+
+进入此目录，删除与你相关rsa的信息即可.
+
+或者删除这个文件
+cd ~/.ssh/
+rm known_hosts
